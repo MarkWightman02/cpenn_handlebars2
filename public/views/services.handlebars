@@ -1,0 +1,41 @@
+    <header>
+      <img src="images/logo.png" alt="Logo">
+      <button id="register-button">Register</button>
+    </header>
+    <div class="topnav">
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <main>
+      <section id="services">
+        <h2>Services</h2>
+        <ul>
+          <li>Individual Therapy</li>
+          {{#if services1}}
+            <li>{{services1}}</li>
+          {{/if}}
+        </ul>
+        <img src="images/service.jpg" alt="Services Image">
+      </section>
+      <section id="services2sec">
+        <h2>Services</h2>
+        <ul>
+          <li>Couples Therapy</li>
+          {{#if services2}}
+            <li>{{services2}}</li>
+          {{/if}}
+        </ul>
+        {{#if services3}}
+          <p id="services3">{{services3}}</p>
+        {{/if}}
+      </section>
+      {{#if services4}}
+        <section>
+          <h2>Other</h2>
+          <p id="services4">{{services4}}</p>
+        </section>
+      {{/if}}
+    </main>
